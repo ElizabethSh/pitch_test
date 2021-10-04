@@ -1,0 +1,18 @@
+@import "./temp.scss";
+
+$red: green;
+
+@mixin clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: $red;
+}
+
+ul {
+  @include clear-list();
+  display: grid;
+}
