@@ -5,16 +5,122 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <title>Gussi light coat: Online shop Gussi</title>
 </head>
 <body>
-  <h1>Home page</h1>
-  <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-  </ul>
+  <header>
+    <a>
+      <img src="img/Logo.png" width="65" height="38" alt="Gussi logo">
+    </a>
+    <div>
+      <h2>Light coat</h2>
+      <p>More cotton, more freedom</p>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <h1 class="visualli-hidden">Gussi light coat</h1>
+      <section class="product">
+        <section class="details">
+          <h2>Gussi light coat </h2>
+          <h3 class="main__title">New collection</h3>
+          <p>It takes you from the party to the 
+            after party  with its fashion-forward 
+            styles. A playfull blendof retro and 
+            modern outdoor design.
+          </p>
+          <ul class="details__list">
+            <li class="details__item">
+              <h3 class="main__title">colour</h3>
+            </li>
+            <li class="details__item">
+              <h3 class="main__title">size</h3>
+              <a href="#">Size guide</a>
+            </li>
+            <li class="details__item">
+              <h3 class="main__title">quantity</h3>
+            </li>
+            <li class="details__item">
+              <h3 class="main__title">cost</h3>
+              <p>$120.00</p>
+            </li>
+          </ul>
+          <div class="description">
+            <h3 class="main__title">PRODUCT DETAILS</h3>
+            <p>Look out for its standout party dresses, feminine details, 
+              statement jackets and cool denim including skinny-cut jeans 
+              and cute denim shorts, which sit alongside its directional 
+              footwear and swimwear ranges.
+  
+            </p>
+            <p>63% Viscose, 37% Polyamide.</p>
+          </div>
+          <button class="button" type="button">Order now</button>
+        </section>
+      </section>
+      <section class="services">
+        <ul class="services__list">
+          <li class="services__item">
+            <h2>Delivery</h2>
+          </li>
+          <li class="services__item">
+            <h2>Return</h2>
+          </li>
+        </ul>
+      </section>
+      <section class="similar">
+        <h2 class="main__title">Similar Collections</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>Kingsman style</h3>
+              <img src="img/kingsman.jpg" width="288" height="160" alt="Kingsman style">
+              <p>More silk, more freedom</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Denim goddess</h3>
+              <img src="img/denim.jpg" width="288" height="160" alt="Denim goddess">
+              <p>More denim, more freedom</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="subscribtion">
+        <h2 class="subscribtion__title">Subscribe our newsletter</h2>
+        <p class="subscribtion__desc">Get notified about new collections of Gussi Store</p>
+        <form class="subscribtion__form">
+          <ul>
+            <li class="subscribtion__item">
+              <input type="text" id="user-name" placeholder="Enter your name" required>
+              <label class="visually-hidden" for="user-name">Name</label>
+            </li>
+            <li class="subscribtion__item">
+              <input type="email" id="user-email" placeholder="Enter your e-mail" required>
+              <label class="visually-hidden" for="user-email">Email</label>
+            </li>
+            <li class="subscribtion__item">
+              <p class="subscribtion__label">Choose your gender:</p>
+              <div class="subscribtion__gender">
+                <input class="visually-hidden" type="radio" name="gender" id="gender-male" checked>
+                <label for="gender-male">Male</label>
+                <input class="visually-hidden" type="radio" name="gender" id="gender-female">
+                <label for="gender-female">Female</label>
+              </div>
+            </li>
+            <li class="subscribtion__item subscribtion__item--check">
+              <input class="visually-hidden" type="checkbox" name="subscribe-check" id="subscribe-check" checked>
+              <label for="subscribe-check">
+                Look out for its standout party dresses, feminine details
+              </label>
+            </li>
+          </ul>
+          <button class="button" type="submit">Subscribe Gussi</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>
