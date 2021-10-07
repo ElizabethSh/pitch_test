@@ -9,6 +9,10 @@
   line-height: 40px;
   color: $light_brown;
 
+  @media (min-width: $tablet_width) {
+    padding-bottom: 16px;
+  }
+
   span {
     font-size: 28px;
     color: $basic_gray;

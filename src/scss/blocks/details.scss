@@ -1,6 +1,10 @@
 .details {
-  margin-top: 28px;
+  padding-top: 28px;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet_width) {
+    padding-top: 19px;
+  }
 }
 
 .details__title {

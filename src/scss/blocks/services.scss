@@ -2,9 +2,15 @@
   margin: 26px 0 42px;
 }
 
+.services__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
 .services__list {
   @include list-reset;
-  
 }
 
 .services__item {

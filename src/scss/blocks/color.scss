@@ -1,5 +1,7 @@
 .color {
-  margin-bottom: 24px;
+  @media (max-width: $mobile_width) {
+    grid-column: 1/-1;
+  }
 }
 
 .color__title {
