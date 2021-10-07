@@ -5,6 +5,11 @@
   @media (min-width: $tablet_width) {
     padding-top: 19px;
   }
+
+  @media (min-width: $desktop_width) {
+    padding-top: 26px;
+    margin-bottom: 71px;
+  }
 }
 
 .details__title {

@@ -1,5 +1,9 @@
 .services {
   margin: 26px 0 42px;
+
+  @media (min-width: $desktop_width) {
+    margin-top: 18px;
+  }
 }
 
 .services__title {

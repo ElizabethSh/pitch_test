@@ -1,10 +1,20 @@
 .similar {
   margin-bottom: 64px;
+
+  @media (min-width: $desktop_width) {
+    margin-bottom: 46px;
+  }
 }
 
 .similar__list {
   @include list-reset();
   margin-top: 7px;
+
+  @media (min-width: $desktop_width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .similar__content {
