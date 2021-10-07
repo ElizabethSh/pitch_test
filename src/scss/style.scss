@@ -1,18 +1,16 @@
-@import "./temp.scss";
+@import './variables';
+@import './fonts';
+@import './mixins';
+@import './global';
 
-$red: green;
-
-@mixin clear-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  color: $red;
-}
-
-ul {
-  @include clear-list();
-  display: grid;
-}
+@import './blocks/button.scss';
+@import './blocks/header.scss';
+@import './blocks/main.scss';
+@import './blocks/product.scss';
+@import './blocks/services.scss';
+@import './blocks/similar.scss';
+@import './blocks/details.scss';
+@import './blocks/color.scss';
+@import './blocks/size.scss';
+@import './blocks/price.scss';
+@import './blocks/subscribtion.scss';
