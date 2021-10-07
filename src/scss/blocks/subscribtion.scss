@@ -1,0 +1,57 @@
+.subscribtion__title {
+  margin-bottom: 8px;
+}
+
+.subscribtion__desc {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 28px;
+  width: 88%;
+  color: $basic_gray
+}
+
+.subscribtion__form {
+  ul {
+    @include list-reset;
+  }
+
+  input {
+    border: none;
+    background-color: $bg_light_gray;
+    color: inherit;
+    width: 100%;
+    line-height: 40px;
+    margin-bottom: 12px;
+    padding: 4px 16px;
+  }
+}
+
+.subscribtion__label {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  color: $basic_gray
+}
+
+.subscribtion__gender {
+  display: flex;
+  width: 167px;
+  margin-bottom: 32px;
+  padding-left: 28px;
+
+  label {
+    margin-right: 52px;
+  }
+}
+
+.subscribtion__item--check {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 28px;
+  margin-bottom: 16px;
+}
+
+.subscribtion__item--check {
+  width: 100%;
+}

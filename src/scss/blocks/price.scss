@@ -1,0 +1,16 @@
+.price__title {
+  margin-bottom: 5px;
+}
+
+.price__value {
+  margin: 0;
+  padding-bottom: 19px;
+  font-size: 40px;
+  line-height: 40px;
+  color: $light_brown;
+
+  span {
+    font-size: 28px;
+    color: $basic_gray;
+  }
+}

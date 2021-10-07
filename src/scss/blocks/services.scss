@@ -1,0 +1,13 @@
+.services {
+  margin: 26px 0 42px;
+}
+
+.services__list {
+  @include list-reset;
+  
+}
+
+.services__item {
+  border-bottom: 1px solid $bg_light_gray;
+  padding: 15px 0 7px;
+}
