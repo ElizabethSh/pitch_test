@@ -44,24 +44,26 @@
           </li>
           <li class="size">
             <h3 class="main__subtitle">size</h3>
-            <ul class="size__list">
-              <li class="size__item">
-                <button class="size__button">xs</button>
-              </li>
-              <li class="size__item">
-                <button class="size__button size__button--active">s</button>
-              </li>
-              <li class="size__item">
-                <button class="size__button">m</button>
-              </li>
-              <li class="size__item">
-                <button class="size__button">l</button>
-              </li>
-              <li class="size__item">
-                <button class="size__button" disabled>xl</button>
-              </li>
-            </ul>
-            <a class="size__link" href="#">Size guide</a>
+            <div class="size__wrapper">
+              <ul class="size__list">
+                <li class="size__item">
+                  <button class="size__button">xs</button>
+                </li>
+                <li class="size__item">
+                  <button class="size__button size__button--active">s</button>
+                </li>
+                <li class="size__item">
+                  <button class="size__button">m</button>
+                </li>
+                <li class="size__item">
+                  <button class="size__button">l</button>
+                </li>
+                <li class="size__item">
+                  <button class="size__button" disabled>xl</button>
+                </li>
+              </ul>
+              <a class="size__link" href="#">Size guide</a>
+            </div>
           </li>
           <li class="quantity">
             <h3 class="main__subtitle">quantity</h3>
@@ -86,10 +88,10 @@
       <section class="services">
         <ul class="services__list">
           <li class="services__item">
-            <h2 class="services__title main__title">Delivery</h2>
+            <h2 class="services__title">Delivery</h2>
           </li>
           <li class="services__item">
-            <h2 class="services__title main__title">Return</h2>
+            <h2 class="services__title">Return</h2>
           </li>
         </ul>
       </section>
@@ -117,7 +119,7 @@
         </ul>
       </section>
       <section class="subscribtion">
-        <h2 class="subscribtion__title main__title">Subscribe our newsletter</h2>
+        <h2 class="subscribtion__title">Subscribe our newsletter</h2>
         <p class="subscribtion__desc">Get notified about new collections of Gussi Store</p>
         <form class="subscribtion__form">
           <ul>
@@ -129,7 +131,7 @@
               <input type="email" id="user-email" placeholder="Enter your e-mail" required>
               <label class="visually-hidden" for="user-email">Email</label>
             </li>
-            <li class="subscribtion__item">
+            <li class="subscribtion__item subscribtion__item--gender">
               <p class="subscribtion__label">Choose your gender:</p>
               <div class="subscribtion__gender">
                 <input class="visually-hidden" type="radio" name="gender" id="gender-male" checked>
