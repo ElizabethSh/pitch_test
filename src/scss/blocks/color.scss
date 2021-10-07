@@ -14,13 +14,44 @@
 }
 
 .color__item {
+  width: 48px;
+  height: 48px;
   margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  @media (min-width: $desktop_width) {
+    margin-right: 6px;
+  }
+
+  &--active {
+    border: 1px solid $basic_black;
+    border-radius: 50%;
+  }
 }
 
 .color__link {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   display: block;
   border-radius: 50%;
-  background-color:aqua; //temp
+
+  @media (min-width: $desktop_width) {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--black {
+    background-color: $basic_black;
+  }
+
+  &--gray {
+    background-color: $basic_gray;
+  }
+
+  &--darkblue {
+    background-color: $basic_gray;
+  }
 }
