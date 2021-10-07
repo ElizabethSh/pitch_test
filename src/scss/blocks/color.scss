@@ -1,0 +1,24 @@
+.color {
+  margin-bottom: 24px;
+}
+
+.color__title {
+  margin-bottom: 8px;
+}
+
+.color__list {
+  @include list-reset;
+  display: flex;
+}
+
+.color__item {
+  margin-right: 4px;
+}
+
+.color__link {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 50%;
+  background-color:aqua; //temp
+}
