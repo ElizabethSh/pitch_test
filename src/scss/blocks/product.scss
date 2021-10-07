@@ -1,0 +1,33 @@
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  margin: 15px 0;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.product__subtitle {
+  order: -1;
+}
+
+.product__desc {
+  margin: 0;
+  padding: 0 16px 16px 0;
+  color: $basic_gray;
+  font-size: 18px;
+  line-height: 28px;
+  border-bottom: 1px solid #E1E6ED;
+}
+
+.product__details {
+  @include list-reset;
+  margin-top: 17px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  border-bottom: 1px solid $bg_light_gray;
+}
