@@ -1,8 +1,6 @@
 @font-face {
   font-family: 'Rajdhani';
   src: 
-    local('rajdhaniregular'),
-    local('rajdhani-regular'),
     url('../fonts/rajdhani-v10-latin-500.woff2') format('woff2'),
     url('../fonts/rajdhani-v10-latin-500.woff') format('woff');
   font-style: normal;
@@ -12,8 +10,7 @@
 
 @font-face {
   font-family: 'Rajdhani';
-  src: local('rajdhaniregular'),
-    local('rajdhani-regular'),
+  src:
     url('../fonts/rajdhani-v10-latin-700.woff2') format('woff2'),
     url('../fonts/rajdhani-v10-latin-700.woff') format('woff');
   font-style: normal;
