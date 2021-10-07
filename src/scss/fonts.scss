@@ -17,3 +17,13 @@
   font-weight: 700;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Rajdhani';
+  src:
+    url('../fonts/rajdhani-v10-latin-regular.woff2') format('woff2'),
+    url('../fonts/rajdhani-v10-latin-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
