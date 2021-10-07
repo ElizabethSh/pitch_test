@@ -1,0 +1,29 @@
+.header {
+  background-image: url('../../img/slide_1.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: $light_brown;
+  min-height: 600px;
+}
+
+.header__logo {
+  display: block;
+  padding-top: 24px;
+  margin-bottom: 370px;
+}
+
+.header__text {
+  color: $basic-white;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.header__slogan {
+  margin: 0;
+  opacity: 0.8;
+}
