@@ -1,0 +1,52 @@
+.size {
+  margin-bottom: 32px;
+}
+
+.size__list {
+  @include list-reset;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.size__button {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic_gray;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 50%;
+    border: 1px solid $basic_gray;
+  }
+
+  &--active {
+    width: 48px;
+    border-radius: 50%;
+    border: 1px solid $basic_black;
+    font-size: 28px;
+    line-height: 24px;
+    color: $basic_black;
+  }
+
+  &[disabled] {
+    color: $bg_light_gray;
+  }
+
+  &[disabled]:hover {
+    border: none;
+  }
+}
+
+.size__link {
+  width: 93px;
+  padding: 2px 12px 0;
+  display: block;
+  color: $light_brown;
+  border-radius: 24px;
+  border: 1px solid $light_brown;
+}
