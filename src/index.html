@@ -8,87 +8,116 @@
   <title>Gussi light coat: Online shop Gussi</title>
 </head>
 <body>
-  <header>
-    <a>
-      <img src="img/Logo.png" width="65" height="38" alt="Gussi logo">
-    </a>
-    <div>
+  <header class="header">
+    <div class="container">
+      <a>
+        <img src="img/Logo.png" width="65" height="38" alt="Gussi logo">
+      </a>
       <h2>Light coat</h2>
       <p>More cotton, more freedom</p>
     </div>
   </header>
   <main class="main">
     <div class="container">
-      <h1 class="visualli-hidden">Gussi light coat</h1>
       <section class="product">
-        <section class="details">
-          <h2>Gussi light coat </h2>
-          <h3 class="main__title">New collection</h3>
-          <p>It takes you from the party to the 
-            after party  with its fashion-forward 
-            styles. A playfull blendof retro and 
-            modern outdoor design.
+        <h1 class="product__title">Gussi light coat </h1>
+        <h2 class="product__subtitle main__subtitle">New collection</h2>
+        <p class="product__desc">It takes you from the party to the 
+          after party  with its fashion-forward 
+          styles. A playfull blendof retro and 
+          modern outdoor design.
+        </p>
+        <ul class="product__details">
+          <li class="color">
+            <h3 class="color__title main__subtitle">colour</h3>
+            <ul class="color__list">
+              <li class="color__item">
+                <a class="color__link" href="#"></a>
+              </li>
+              <li class="color__item">
+                <a class="color__link" href="#"></a>
+              </li>
+              <li class="color__item">
+                <a class="color__link" href="#"></a>
+              </li>
+            </ul>
+          </li>
+          <li class="size">
+            <h3 class="main__subtitle">size</h3>
+            <ul class="size__list">
+              <li class="size__item">
+                <button class="size__button">xs</button>
+              </li>
+              <li class="size__item">
+                <button class="size__button size__button--active">s</button>
+              </li>
+              <li class="size__item">
+                <button class="size__button">m</button>
+              </li>
+              <li class="size__item">
+                <button class="size__button">l</button>
+              </li>
+              <li class="size__item">
+                <button class="size__button" disabled>xl</button>
+              </li>
+            </ul>
+            <a class="size__link" href="#">Size guide</a>
+          </li>
+          <li class="quantity">
+            <h3 class="main__subtitle">quantity</h3>
+          </li>
+          <li class="price">
+            <h3 class="price__title main__subtitle">cost</h3>
+            <p class="price__value">$120<span>.00</span></p>
+          </li>
+        </ul>
+        <div class="details">
+          <h3 class="details__title main__subtitle">PRODUCT DETAILS</h3>
+          <p class="details__text">Look out for its standout party dresses, feminine details, 
+            statement jackets and cool denim including skinny-cut jeans 
+            and cute denim shorts, which sit alongside its directional 
+            footwear and swimwear ranges.
+
           </p>
-          <ul class="details__list">
-            <li class="details__item">
-              <h3 class="main__title">colour</h3>
-            </li>
-            <li class="details__item">
-              <h3 class="main__title">size</h3>
-              <a href="#">Size guide</a>
-            </li>
-            <li class="details__item">
-              <h3 class="main__title">quantity</h3>
-            </li>
-            <li class="details__item">
-              <h3 class="main__title">cost</h3>
-              <p>$120.00</p>
-            </li>
-          </ul>
-          <div class="description">
-            <h3 class="main__title">PRODUCT DETAILS</h3>
-            <p>Look out for its standout party dresses, feminine details, 
-              statement jackets and cool denim including skinny-cut jeans 
-              and cute denim shorts, which sit alongside its directional 
-              footwear and swimwear ranges.
-  
-            </p>
-            <p>63% Viscose, 37% Polyamide.</p>
-          </div>
-          <button class="button" type="button">Order now</button>
-        </section>
+          <p class="details__structure">63% Viscose, 37% Polyamide.</p>
+        </div>
+        <button class="button" type="button">Order now</button>
       </section>
       <section class="services">
         <ul class="services__list">
           <li class="services__item">
-            <h2>Delivery</h2>
+            <h2 class="services__title main__title">Delivery</h2>
           </li>
           <li class="services__item">
-            <h2>Return</h2>
+            <h2 class="services__title main__title">Return</h2>
           </li>
         </ul>
       </section>
       <section class="similar">
-        <h2 class="main__title">Similar Collections</h2>
-        <ul>
-          <li>
+        <h2 class="main__subtitle">Similar Collections</h2>
+        <ul class="similar__list">
+          <li class="similar__item">
             <a href="#">
-              <h3>Kingsman style</h3>
               <img src="img/kingsman.jpg" width="288" height="160" alt="Kingsman style">
-              <p>More silk, more freedom</p>
             </a>
+            <div class="similar__content">
+              <h3 class="similar__title">Kingsman style</h3>
+              <p class="similar__desc">More silk, more freedom</p>
+            </div>
           </li>
-          <li>
+          <li class="similar__item">
             <a href="#">
-              <h3>Denim goddess</h3>
               <img src="img/denim.jpg" width="288" height="160" alt="Denim goddess">
-              <p>More denim, more freedom</p>
             </a>
+            <div class="similar__content">
+              <h3 class="similar__title">Denim goddess</h3>
+              <p class="similar__desc">More denim, more freedom</p>
+            </div>
           </li>
         </ul>
       </section>
       <section class="subscribtion">
-        <h2 class="subscribtion__title">Subscribe our newsletter</h2>
+        <h2 class="subscribtion__title main__title">Subscribe our newsletter</h2>
         <p class="subscribtion__desc">Get notified about new collections of Gussi Store</p>
         <form class="subscribtion__form">
           <ul>
