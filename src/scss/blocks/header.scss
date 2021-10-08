@@ -1,15 +1,36 @@
 .header {
-  background-image: url('../../img/slide_1.jpg');
+  background-image: url('../../img/slide1_mobile.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-color: $light_brown;
+  background-size: cover;
   min-height: 600px;
+
+  @media (min-width: $tablet_width) {
+    height: 600px;
+    background-image: url('../../img/slide1_tablet.jpg');
+  }
+
+  @media (min-width: $desktop_width) {
+    height: 768px;
+    background-image: url('../../img/slide1_desktop.jpg');
+  }
 }
 
 .header__logo {
   display: block;
   padding-top: 24px;
   margin-bottom: 370px;
+}
+
+.header__logo img {
+  width: 65px;
+  height: 38px;
+
+  @media (min-width: $desktop_width) {
+    width: 94px;
+    height: 53px;
+  }
 }
 
 .header__text {
