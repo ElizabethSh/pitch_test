@@ -20,8 +20,7 @@
 }
 
 .subscribtion__desc {
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 7px 0 28px;
   font-size: 18px;
   line-height: 28px;
   width: 88%;
@@ -33,10 +32,11 @@
   }
 }
 
+.subscribtion__list {
+  @include list-reset;
+}
+
 .subscribtion__form {
-  ul {
-    @include list-reset;
-  }
 
   input {
     border: none;
@@ -54,32 +54,106 @@
   }
 }
 
-.subscribtion__label {
+.subscribtion__info {
   margin: 0;
   font-size: 20px;
   line-height: 32px;
   color: $basic_gray
 }
 
-.subscribtion__gender {
+.subscribtion__list--gender {
+  @include list-reset;
   display: flex;
-  align-items: center;
-  width: 167px;
-  padding-left: 28px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 27px;
+  width: 182px;
 
   @media (min-width: $tablet_width) {
     padding-left: 53px;
   }
+}
+
+.subscribtion__gender-item {
 
   label {
     margin-right: 52px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  input + label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: -29px;
+    border: 1px solid $bg_light_gray;
+    border-radius: 50%;
+  }
+
+  input:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 6px;
+    left: -25px;
+    border-radius: 50%;
+    background-color: $basic_black;
   }
 }
 
-.subscribtion__item--check {
+.subscribtion__item--checkbox {
   display: flex;
   justify-content: flex-start;
   padding-left: 28px;
   margin-bottom: 16px;
   width: 100%;
+
+  label {
+    position: relative;
+    cursor: pointer;
+  }
+
+  input + label::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid $basic_black;
+    border-radius: 1px;
+    top: -1px;
+    left: -29px;
+  }
+
+  input + label::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 9px;
+    left: -24px;
+    top: 4px;
+    background-image: url('../../img/icon-tick-inactive.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  input:checked + label::before {
+    background-color: $basic_black;
+  }
+
+  input:checked + label::after {
+    background-image: url('../../img/icon-tick-active.svg');
+  }
+
+  input:disabled + label::before {
+    border: 1px solid $bg_light_gray;
+  }
+
+  input:disabled + label::after {
+    display: none;
+  }
 }
+
