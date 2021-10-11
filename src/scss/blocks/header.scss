@@ -1,4 +1,6 @@
 .header {
+  padding-top: 24px;
+  padding-left: 16px;
   background-image: url('../../img/slide1_mobile.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -14,13 +16,23 @@
   @media (min-width: $desktop_width) {
     height: 768px;
     background-image: url('../../img/slide1_desktop.jpg');
+    background-size: cover;
+    padding-top: 32px;
+    padding-left: 52px;
   }
 }
 
 .header__logo {
   display: block;
-  padding-top: 24px;
-  margin-bottom: 370px;
+  margin-bottom: 367px;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 352px;
+  }
+
+  @media (min-width: $desktop_width) {
+    margin-bottom: 475px;
+  }
 }
 
 .header__logo img {
@@ -42,9 +54,29 @@
   font-size: 48px;
   line-height: 48px;
   font-weight: 400;
+
+  @media (min-width: $tablet_width) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 72px;
+    line-height: 72px;
+  }
 }
 
 .header__slogan {
   margin: 0;
   opacity: 0.8;
+
+  @media (min-width: $tablet_width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
