@@ -70,9 +70,14 @@
             </li>
             <li class="quantity">
               <h3 class="main__subtitle">quantity</h3>
+              <div class="quantity__wrapper">
+                <button class="quantity__control quantity__control--decrease" type="button" aria-label="decrease"></button>
+                <input class="quantity__control quantity__control--value" type="text" name="quantity" value="1" title="quantity scale" readonly>
+                <button class="quantity__control quantity__control--increase" type="button" aria-label="increase"></button>
+              </div>
             </li>
             <li class="price">
-              <h3 class="price__title main__subtitle">cost</h3>
+              <h3 class="main__subtitle">cost</h3>
               <p class="price__value">$120<span>.00</span></p>
             </li>
           </ul>
