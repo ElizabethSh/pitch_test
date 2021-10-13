@@ -10,12 +10,41 @@
 <body class="page">
   <div class="page__wrapper">
     <header class="header">
-      <a class="header__logo" href="#">
-        <img src="img/logo.svg" width="65" height="38" alt="Gussi logo">
-      </a>
-      <div class="header__text">
-        <h2 class="header__title">Light coat</h2>
-        <p class="header__slogan">More cotton, more freedom</p>
+      <div class="header__wrapper slider slider--1">
+        <a class="header__logo" href="#">
+          <img src="img/logo.svg" width="65" height="38" alt="Gussi logo">
+        </a>
+        <ul class="slider__list">
+          <li class="slider__item slide slide--current">
+            <h2 class="slider__title">Light coat</h2>
+            <p class="slider__slogan">More cotton, more freedom</p>
+          </li>
+          <li class="slider__item slide">
+            <h2 class="slider__title">Sandy longsleeve</h2>
+            <p class="slider__slogan">More cotton, more freedom</p>
+          </li>
+          <li class="slider__item slide">
+            <h2 class="slider__title">Lime jacket</h2>
+            <p class="slider__slogan">More cotton, more freedom</p>
+          </li>
+        </ul>
+        <div class="slider__nav">
+          <div class="slider__toggles">
+            <button class="slider__toggle slider__toggle--left" type="button" aria-label="to-left" disabled>
+              <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.043 7.999 9.09 1.958A1.147 1.147 0 0 0 7.471.336L.622 
+                  7.188a1.142 1.142 0 0 0 0 1.622l6.847 6.852a1.142 1.142 0 0 0 1.87-.372 1.142 1.142 0 0 0-.249-1.25L3.043 8Z" fill="#fff"/>
+              </svg>
+            </button>
+            <button class="slider__toggle slider__toggle--right" type="button" aria-label="to-right">
+              <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.957 7.999.91 1.958A1.147 1.147 0 0 1 2.529.336l6.848 
+                  6.852a1.142 1.142 0 0 1 0 1.622L2.53 15.662a1.142 1.142 0 0 1-1.87-.372 1.142 1.142 0 0 1 .249-1.25L6.957 8Z" fill="#fff"/>
+                </svg>
+            </button>
+          </div>
+          <p class="slider__number">01&ensp;&mdash;&ensp;<span>03</span></p>
+        </div>
       </div>
     </header>
     <main class="main">
