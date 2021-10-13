@@ -22,10 +22,12 @@ buttonLeft.addEventListener(`click`, () => {
   if (slideNumber > 1) {
     slideNumber--;
     buttonRight.disabled = false;
-  } else {
+  } 
+
+  if (slideNumber === 1) {
     buttonLeft.disabled = true;
   }
-  
+
   init();
 });
 
@@ -33,7 +35,9 @@ buttonRight.addEventListener(`click`, () => {
   if (slideNumber < slides.length) {
     slideNumber++;
     buttonLeft.disabled = false;
-  } else {
+  } 
+
+  if (slideNumber === slides.length) {
     buttonRight.disabled = true;
   }
 
