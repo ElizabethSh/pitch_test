@@ -51,8 +51,10 @@ function images() {
 
 function scripts() {
   return src('src/js/*.js')
+    .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename('scripts.min.js'))
+    .pipe(sourcemaps.write('.'))
     .pipe(dest('dist/js'))
     .pipe(sync.stream());
 };
