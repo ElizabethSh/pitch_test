@@ -1,0 +1,140 @@
+.slider {
+  padding: 24px 74px 27px 16px;
+  min-height: 600px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: $light_brown;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  transition: all ease .5s;
+
+  @media (min-width: $desktop_width) {
+    padding-top: 32px;
+    padding-left: 52px;
+    min-height: 768px;
+  }
+}
+
+.slider--1 {
+  background-image: url('../../img/slide1_mobile.jpg');
+  
+  @media (min-width: $tablet_width) {
+    background-image: url('../../img/slide1_tablet.jpg');
+  }
+  
+  @media (min-width: $desktop_width) {
+    background-image: url('../../img/slide1_desktop.jpg');
+  }
+}
+
+.slider--2 {
+  background-image: url('../../img/slide2_mobile.jpg');
+
+  @media (min-width: $tablet_width) {
+    background-image: url('../../img/slide2_tablet.jpg');
+  }
+
+  @media (min-width: $desktop_width) {
+    background-image: url('../../img/slide2_desktop.jpg');
+  }
+}
+
+.slider--3 {
+  background-image: url('../../img/slide3_mobile.jpg');
+
+  @media (min-width: $tablet_width) {
+    background-image: url('../../img/slide3_tablet.jpg');
+  }
+
+  @media (min-width: $desktop_width) {
+    background-image: url('../../img/slide3_desktop.jpg');
+  }
+}
+
+.slider__list {
+  @include list-reset;
+}
+
+.slider__item {
+  color: $basic-white;
+}
+
+.slide {
+  display: none;
+}
+
+.slide--current {
+  display: block;
+}
+
+.slider__title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 400;
+
+  @media (min-width: $tablet_width) {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+.slider__slogan {
+  margin: 0;
+  opacity: 0.8;
+
+  @media (min-width: $tablet_width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop_width) {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.slider__nav {
+  margin-top: 31px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__toggles {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__toggle:disabled svg {
+  fill-opacity: .5;
+}
+
+.slider__number {
+  margin: 0;
+  color: $basic-white;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.slider__number span {
+  margin: 0;
+  opacity: 0.5;
+}
