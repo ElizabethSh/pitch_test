@@ -1,5 +1,5 @@
 .slider {
-  padding: 24px 74px 27px 16px;
+  padding: 24px 74px 23px 16px;
   min-height: 600px;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -50,6 +50,7 @@
   @media (min-width: $desktop_width) {
     background-image: url('../../img/slide3_desktop.jpg');
   }
+  
 }
 
 .slider__list {
@@ -101,37 +102,59 @@
 }
 
 .slider__nav {
-  margin-top: 31px;
+  margin-top: 28px;
   display: flex;
   justify-content: space-between;
 }
 
 .slider__toggles {
-  width: 80px;
+  margin-left: -4px;
+  width: 88px;
   display: flex;
   justify-content: space-between;
 }
 
 .slider__toggle {
   padding: 0;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $basic-white;
+    border-radius: 50%;
+  }
+  
+  &:active {
+    background-color: $basic-white;
+    border-radius: 50%;
+  
+    path {
+      fill: $basic_gray;
+    } 
+  }
+
+  &:disabled {
+    opacity: .5;
+    border: none;
+  }
 }
 
-.slider__toggle:disabled svg {
-  fill-opacity: .5;
-}
 
 .slider__number {
   margin: 0;
   color: $basic-white;
   font-size: 20px;
   line-height: 32px;
+  align-self: center;
 }
 
 .slider__number span {
