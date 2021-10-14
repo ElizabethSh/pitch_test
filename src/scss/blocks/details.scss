@@ -1,8 +1,13 @@
 .details {
+  @include reset;
   padding-top: 28px;
   margin-bottom: 38px;
+  grid-column: 1/-1;
+  border-top: 1px solid $bg_light_gray;
 
   @media (min-width: $tablet_width) {
+    margin-top: 10px;
+    margin-bottom: 38px;
     padding-top: 19px;
   }
 

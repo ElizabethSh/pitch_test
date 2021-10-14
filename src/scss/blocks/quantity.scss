@@ -1,10 +1,14 @@
+.quantity {
+  @include reset;
+}
+
 .quantity__wrapper {
   margin-top: 7px;
   display: flex;
   max-width: 100%;
 
   @media (min-width: $tablet_width) {
-    margin-top: 10px;
+    margin-top: 9px;
   }
 }
 
@@ -18,6 +22,7 @@
   text-align: center;
   vertical-align: middle;
   width: 15px;
+  cursor: pointer;
   
   &--decrease::before {
     content: "-";
@@ -35,6 +40,10 @@
     color: $basic_gray;
     max-width: 100px;
     width: 46px;
+
+    @media (min-width: $desktop_width) {
+      width: 48px;
+    }
   }
   
   &--increase::before {
@@ -46,5 +55,12 @@
     width: 16px;
     height: 24px;
     transform: translate(-50%, -50%);
+
+    @media (min-width: $desktop_width) {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #E1E6ED;
+      border-radius: 50%;
+    }
   }
 }

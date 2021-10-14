@@ -1,16 +1,18 @@
-.price__title {
-  margin-bottom: 5px;
+.price {
+  @include reset;
 }
 
 .price__value {
   margin: 0;
+  margin-top: 5px;
   padding-bottom: 19px;
   font-size: 40px;
   line-height: 40px;
   color: $light_brown;
 
   @media (min-width: $tablet_width) {
-    padding-bottom: 16px;
+    padding: 7px 0 4px;
+    margin-top: 0;
   }
 
   span {
