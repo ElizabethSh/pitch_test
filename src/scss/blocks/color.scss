@@ -1,6 +1,17 @@
 .color {
+  @include reset;
+  margin-bottom: 24px;
+
   @media (max-width: $mobile_width) {
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop_width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -11,36 +22,51 @@
 .color__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .color__item {
-  width: 48px;
-  height: 48px;
   margin-right: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 
   @media (min-width: $desktop_width) {
     margin-right: 6px;
   }
 
-  &--active {
+  label {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $desktop_width) {
+      width: 32px;
+      height: 32px;
+    }
+  
+    &:hover,
+    &:focus {
+      border: 1px solid $basic_gray;
+      border-radius: 50%;
+    }
+  }
+
+  input:checked + label {
     border: 1px solid $basic_black;
     border-radius: 50%;
   }
 }
 
-.color__link {
+.color__label {
   width: 40px;
   height: 40px;
   display: block;
   border-radius: 50%;
 
   @media (min-width: $desktop_width) {
-    width: 32px;
-    height: 32px;
+    width: 26px;
+    height: 26px;
   }
 
   &--black {
@@ -52,6 +78,6 @@
   }
 
   &--darkblue {
-    background-color: $basic_gray;
+    background-color: $dark_blue;
   }
 }
