@@ -1,8 +1,12 @@
 .similar {
-  margin-bottom: 64px;
+  margin-bottom: 52px;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 49px;
+  }
 
   @media (min-width: $desktop_width) {
-    margin-bottom: 46px;
+    margin-bottom: 36px;
   }
 }
 
@@ -17,25 +21,72 @@
   }
 }
 
-.similar__content {
-  margin: -60px auto 0;
-  width: 89%;
-  color: $basic-white;
+.similar__item {
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 28px;
+  }
 }
 
-.similar__item {
-  margin-bottom: 28px;
+.similar__link {
+  padding: 12px 16px;
+  border-radius: 4px;
+  min-height: 160px;
+  width: 100%;
+  color: $basic-white;
+  background-color: $basic_gray;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 
-  img {
-    width: 100%;
+  @media (min-width: $tablet_width) and (max-width: $tablet_max_width) {
+    min-height: 287px;
+    padding: 16px 17px;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 296px;
+  }
+
+
+  &--kingsman {
+    background-image: url('../../img/kingsman.jpg');
+
+    @media (min-width: $tablet_width) {
+      background-image: url('../../img/kingsman_tablet.jpg');
+    }
+
+    @media (min-width: $desktop_width) {
+      background-image: url('../../img/kingsman_desktop.jpg');
+    }
+  }
+
+  &--denim {
+    background-image: url('../../img/denim.jpg');
+
+    @media (min-width: $tablet_width) {
+      background-image: url('../../img/denim_tablet.jpg');
+    }
+
+    @media (min-width: $desktop_width) {
+      background-image: url('../../img/denim_desktop.jpg');
+    }
   }
 }
 
 .similar__title {
   margin: 0;
+  margin-top: auto;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
+
+  @media (min-width: $tablet_width) and (max-width: $tablet_max_width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .similar__desc {
@@ -43,4 +94,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
+  opacity: 0.5;
+
+  @media (min-width: $tablet_width) and (max-width: $tablet_max_width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
