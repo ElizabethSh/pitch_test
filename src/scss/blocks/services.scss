@@ -16,6 +16,10 @@
   position: relative;
   transition: height ease-in-out .5s;
 
+  @media (min-width: $tablet_width) {
+    padding-top: 15px;
+  }
+
   .services__title {
     margin: 0;
     font-size: 24px;

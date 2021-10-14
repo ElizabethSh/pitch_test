@@ -25,7 +25,7 @@
   margin-bottom: 16px;
 
   @media (min-width: $tablet_width) {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
 }
 
@@ -38,6 +38,7 @@
   background-color: $basic_gray;
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 
