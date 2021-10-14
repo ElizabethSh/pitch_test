@@ -1,3 +1,5 @@
+// Slider
+
 const slider = document.querySelector(`.slider`);
 const slides = slider.querySelectorAll(`.slide`);
 const buttonLeft = slider.querySelector(`.slider__toggle--left`);
@@ -45,3 +47,38 @@ buttonRight.addEventListener(`click`, () => {
 });
 
 init();
+
+
+// Accordion
+
+const servicesItems = document.querySelectorAll(`.services__item`);
+
+servicesItems.forEach((item) => {
+  item.addEventListener(`click`, () => {
+    item.classList.toggle(`services__item--open`);
+  });
+});
+
+// Quantity
+
+const quantityValue = document.querySelector(`.quantity__control--value`);
+const quantityDecrease = document.querySelector(`.quantity__control--decrease`);
+const quantityIncrease = document.querySelector(`.quantity__control--increase`);
+
+let value = 1;
+
+quantityValue.defaultValue = value;
+
+quantityDecrease.addEventListener(`click`, () => {
+  if (value < 1) {
+    return;
+  }
+  value--;
+  quantityValue.defaultValue = value;
+});
+
+quantityIncrease.addEventListener(`click`, () => {
+  value++;
+  quantityValue.defaultValue = value;
+});
+
