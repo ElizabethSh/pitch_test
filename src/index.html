@@ -57,67 +57,87 @@
             styles. A playfull blend of retro and 
             modern outdoor design.
           </p>
-          <ul class="product__details">
-            <li class="color">
-              <h3 class="color__title main__subtitle">colour</h3>
+          <form class="product__details" method="POST" action="https://echo.htmlacademy.ru" enctype="multipart/form-data" autocomplete="off">
+            <fieldset class="color">
+              <legend class="color__title main__subtitle">colour</legend>
               <ul class="color__list">
-                <li class="color__item color__item--active">
-                  <a class="color__link color__link--black" href="#"></a>
+                <li class="color__item">
+                  <input class="visually-hidden" type="radio" id="color-black" name="color" value="black" checked>
+                  <label for="color-black">
+                    <div class="color__label color__label--black">
+                      <span class="visually-hidden">Black</span>
+                    </div>
+                  </label>
                 </li>
                 <li class="color__item">
-                  <a class="color__link color__link--gray" href="#"></a>
+                  <input class="visually-hidden" type="radio" id="color-gray" name="color" value="gray">
+                  <label for="color-gray">
+                    <div class="color__label color__label--gray">
+                      <span class="visually-hidden">Gray</span>
+                    </div>
+                  </label>
                 </li>
                 <li class="color__item">
-                  <a class="color__link color__link--darkblue" href="#"></a>
+                  <input class="visually-hidden" type="radio" id="color-darkblue" name="color" value="darkblue">
+                  <label for="color-darkblue">
+                    <div class="color__label color__label--darkblue">
+                      <span class="visually-hidden">Darkblue</span>
+                    </div>
+                  </label>
                 </li>
               </ul>
-            </li>
-            <li class="size">
-              <h3 class="main__subtitle">size</h3>
+            </fieldset>
+            <fieldset class="size">
+              <legend class="main__subtitle">size</legend>
               <div class="size__wrapper">
                 <ul class="size__list">
                   <li class="size__item">
-                    <button class="size__button">xs</button>
+                    <input class="visually-hidden" type="radio" name="size" id="size-xs" value="xs">
+                    <label class="size__label" for="size-xs">xs</label>
                   </li>
                   <li class="size__item">
-                    <button class="size__button size__button--active">s</button>
+                    <input class="visually-hidden" type="radio" name="size" id="size-s" value="s" checked>
+                    <label class="size__label" for="size-s">s</label>
                   </li>
                   <li class="size__item">
-                    <button class="size__button">m</button>
+                    <input class="visually-hidden" type="radio" name="size" id="size-m" value="m">
+                    <label class="size__label" for="size-m">m</label>
                   </li>
                   <li class="size__item">
-                    <button class="size__button">l</button>
+                    <input class="visually-hidden" type="radio" name="size" id="size-l" value="l">
+                    <label class="size__label" for="size-l">l</label>
                   </li>
                   <li class="size__item">
-                    <button class="size__button" disabled>xl</button>
+                    <input class="visually-hidden" type="radio" name="size" id="size-xl" value="xl" disabled>
+                    <label class="size__label" for="size-xl">xl</label>
                   </li>
                 </ul>
                 <a class="size__link" href="#">Size guide</a>
               </div>
-            </li>
-            <li class="quantity">
-              <h3 class="main__subtitle">quantity</h3>
+            </fieldset>
+            <fieldset class="quantity">
+              <legend class="main__subtitle">quantity</legend>
               <div class="quantity__wrapper">
                 <button class="quantity__control quantity__control--decrease" type="button" aria-label="decrease"></button>
                 <input class="quantity__control quantity__control--value" type="text" name="quantity" value="1" title="quantity scale" readonly>
                 <button class="quantity__control quantity__control--increase" type="button" aria-label="increase"></button>
               </div>
-            </li>
-            <li class="price">
-              <h3 class="main__subtitle">cost</h3>
+            </fieldset>
+            <fieldset class="price">
+              <legend class="main__subtitle">cost</legend>
               <p class="price__value">$120<span>.00</span></p>
-            </li>
-          </ul>
-          <div class="details">
-            <h3 class="details__title main__subtitle">PRODUCT DETAILS</h3>
-            <p class="details__text">Look out for its standout party dresses, feminine details, 
-              statement jackets and cool denim including skinny-cut jeans 
-              and cute denim shorts, which sit alongside its directional 
-              footwear and swimwear ranges.
-            </p>
-            <p class="details__structure">63% Viscose, 37% Polyamide.</p>
-          </div>
-          <button class="button" type="button">Order now</button>
+            </fieldset>
+            <div class="details">
+              <h3 class="details__title main__subtitle">PRODUCT DETAILS</h3>
+              <p class="details__text">Look out for its standout party dresses, feminine details, 
+                statement jackets and cool denim including skinny-cut jeans 
+                and cute denim shorts, which sit alongside its directional 
+                footwear and swimwear ranges.
+              </p>
+              <p class="details__structure">63% Viscose, 37% Polyamide.</p>
+            </div>
+            <button class="product__button button" type="submit">Order now</button>
+          </form>
         </section>
         <section class="services">
           <ul class="services__list">
@@ -171,25 +191,25 @@
         <section class="subscribtion">
           <h2 class="subscribtion__title">Subscribe our newsletter</h2>
           <p class="subscribtion__desc">Get notified about new collections of Gussi Store</p>
-          <form class="subscribtion__form">
+          <form class="subscribtion__form" method="POST">
             <ul class="subscribtion__list">
               <li class="subscribtion__item">
-                <input type="text" id="user-name" placeholder="Enter your name" required>
+                <input type="text" id="user-name" name="username" placeholder="Enter your name" required>
                 <label class="visually-hidden" for="user-name">Name</label>
               </li>
               <li class="subscribtion__item">
-                <input type="email" id="user-email" placeholder="Enter your e-mail" required>
+                <input type="email" id="user-email" name="email" placeholder="Enter your e-mail" required>
                 <label class="visually-hidden" for="user-email">Email</label>
               </li>
               <li class="subscribtion__item subscribtion__item--gender">
                 <p class="subscribtion__info">Choose your gender:</p>
                 <ul class="subscribtion__list subscribtion__list--gender">
                   <li class="subscribtion__gender-item">
-                    <input class="visually-hidden" type="radio" name="gender" id="gender-male" checked>
+                    <input class="visually-hidden" type="radio" name="gender" value="male" id="gender-male" checked>
                     <label class="subscribtion__label" for="gender-male">Male</label>
                   </li>
                   <li class="subscribtion__gender-item">
-                    <input class="visually-hidden" type="radio" name="gender" id="gender-female">
+                    <input class="visually-hidden" type="radio" name="gender" value="female" id="gender-female">
                     <label for="gender-female">Female</label>
                   </li>
                 </ul>

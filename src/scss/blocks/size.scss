@@ -1,53 +1,41 @@
 .size {
-  padding-bottom: 10px;
+  @include reset;
+  margin-bottom: 33px;
+
   @media (max-width: $mobile_width) {
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $tablet_width) {
+    margin-bottom: 0
   }
 }
 
 .size__wrapper {
   @media (min-width: $tablet_width) {
     display: flex;
-    align-items: center;
-    width: 72%;
+    align-items: flex-start;
+    width: 75%;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop_width) {
+    width: 63%;
   }
 }
 
 .size__list {
   @include list-reset;
   display: flex;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0;
 
   @media (min-width: $desktop_width) {
-    margin-bottom: 0;
-  }
-}
-
-.size__button {
-  width: 48px;
-  height: 48px;
-  background-color: transparent;
-  font-size: 20px;
-  line-height: 24px;
-  color: $basic_gray;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  @media (min-width: $desktop_width) {
-    font-size: 16px;
-    width: 32px;
-    height: 32px;
+    margin: 6px 0 0 0px;
   }
 
-  &:hover {
-    border-radius: 50%;
-    border: 1px solid $basic_gray;
-  }
-
-  &--active {
+  input:checked + label {
     width: 48px;
+    height: 48px;
     border-radius: 50%;
     border: 1px solid $basic_black;
     font-size: 28px;
@@ -56,17 +44,54 @@
 
     @media (min-width: $desktop_width) {
       width: 32px;
+      height: 32px;
       font-size: 20px;
       line-height: 24px;
     }
   }
 
-  &[disabled] {
+  input:disabled + label {
     color: $bg_light_gray;
   }
 
-  &[disabled]:hover {
+  input:disabled + label {
     border: none;
+  }
+}
+
+.size__label {
+  width: 22px;
+  height: 45px;
+  margin-right: 19px;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic_gray;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: size ease 0.3s;
+
+  @media (min-width: $desktop_width) {
+    font-size: 16px;
+    width: 15px;
+    height: 32px;
+  }
+
+  &:hover {
+    border-radius: 50%;
+    border: 1px solid $basic_gray;
+    width: 48px;
+    height: 48px;
+
+    @media (min-width: $desktop_width) {
+      // font-size: 16px;
+      width: 32px;
+      height: 32px;
+    }
   }
 }
 
@@ -77,4 +102,8 @@
   color: $light_brown;
   border-radius: 24px;
   border: 1px solid $light_brown;
+
+  @media (min-width: $tablet_width) {
+    margin-top: 7px;
+  }
 }
