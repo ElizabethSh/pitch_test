@@ -28,10 +28,13 @@
 .size__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 0 24px 0;
 
   @media (min-width: $desktop_width) {
     margin: 8px 0 0 9px;
+    max-width: 185px;
+    margin-bottom: 33px;
   }
 
   input:checked + label {

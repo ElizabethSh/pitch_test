@@ -23,6 +23,10 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: $desktop_width) {
+    max-width: 130px;
+  }
 }
 
 .color__item {

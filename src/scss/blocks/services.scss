@@ -12,12 +12,16 @@
 
 .services__item {
   border-bottom: 1px solid $bg_light_gray;
-  padding: 14px 0 7px;
+  padding: 14px 0 2px;
   position: relative;
   transition: height ease-in-out .5s;
 
   @media (min-width: $tablet_width) {
     padding-top: 15px;
+  }
+
+  @media (min-width: $desktop_width) {
+    padding-bottom: 0;
   }
 
   .services__title {
@@ -37,6 +41,7 @@
   }
 
   .services__desc {
+    padding-bottom: 5px;
     height: 0;
     overflow: hidden;
     color: $basic_gray;
